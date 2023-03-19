@@ -9,7 +9,7 @@ async def ruta():
     return {'PRIMER API DE FEDERICO ACEDO'}
 
 #cargamos los csv para empezar a trabajar 
-listado_gral = pd.read_csv('datsets\ETL.csv')
+listado_gral = pd.read_csv('FastApi\ETL.csv')
 
 @app.get('/max')
 #funcion 1 : devulve la pelicula con mayor duracion del año indicado segun cada plataforma
