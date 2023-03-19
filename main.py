@@ -18,20 +18,20 @@ def get_max_duration(año:int,tipo_duracion:str, platforma:str):
     nuevalista = nuevalista.loc[nuevalista['duration_int'] == nuevalista['duration_int'].max()]
     result = nuevalista['title']
     return result
-
-@app.get('/cantidad de peliculas')
+#2da funcion indica el puntaje de las peliculas que hay por plataforma segun los clientes
+@app.get('/puntuacion de peliculas por año y plataforma')
 def get_score_count (plataforma:str,puntaje:float,año:int):
     nuevalist = listado_gral[(listado_gral['plataform'] == plataforma) &  (listado_gral['score'] > puntaje) & (listado_gral['release_year'] == año)]
     result = nuevalist.shape[0]
     return result
-
+#3er funcion devulve la cantidad de peliculas que hay por plataforma
 @app.get ('/cantidad de peliculas por plataforma')
 def get_count_plataform(plataform:str):
     nuevalist =listado_gral[(listado_gral['plataform']==plataform)]
     count=nuevalist.shape[0]
     return count
 
-
+#4ta funcion devulve quien es el actor que mas participa en las peliculas por año y por plataforma
 @app.get ('/actor mas recurrente por año y por plataforma ')
 def get_actor(plataform:str, año:int):
     result = listado_gral[(listado_gral['plataform']==plataform) & (listado_gral['release_year']==año)]
