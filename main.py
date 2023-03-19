@@ -37,7 +37,7 @@ def get_actor(plataform:str, año:int):
     result = listado_gral[(listado_gral['plataform']==plataform) & (listado_gral['release_year']==año)]
     for i in result['cast']:
         if i != 'Sin dato ':
-            i=i.replace(', ' , ',')
+            i=i.replace(',' , ',')
         else:
             pass
     lista=[]
