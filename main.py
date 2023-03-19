@@ -64,3 +64,19 @@ def get_actor(plataform:str, año:int):
         return 'la plataforma no brinda esta informacion'
     else:
         return max(dict,key=dict.get)
+    
+    
+@app.get ('/actor mas recurrente por año y por plataforma1 ')
+from collections import Counter
+def get_actor(plataform:str, anio:int):
+    result = listado_gral[(listado_gral['plataform']==plataform) & (listado_gral['release_year']==anio)]
+    
+    lista=[]
+    result = result['cast'].dropna()
+    for i in result:
+        if i != 'sin dato':
+             l= [elemento.strip() for elemento in i.split(',')]
+             lista+=l
+
+    mas_frecuentes = Counter(lista).most_common()
+    return mas_frecuentes[0][0]
