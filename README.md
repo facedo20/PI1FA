@@ -1,4 +1,4 @@
-[HenryLogo](https://d31uz8lwfmyn8g.cloudfront.net/Assets/logo-henry-white-lg.png)
+![HenryLogo](https://d31uz8lwfmyn8g.cloudfront.net/Assets/logo-henry-white-lg.png)
 
  En este repositorio podran encontrar el primer proyecto individual de Federico acedo para el bootcamp "soy Henry" de la carrera data scientist.
 
