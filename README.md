@@ -28,3 +28,4 @@ con solo escribir plataforma = Netflix tipo= pilicula (min ) o serie ( season) y
 2° consulta: devuelve la valoración promedio de una película en tal año.
 3er consulta: devuelve la cantidad de películas por año en cada plataforma
 4° consulta: 
+https://pi1fa.onrender.com
