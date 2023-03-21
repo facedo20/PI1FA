@@ -1,8 +1,8 @@
 # PI1FA
 
-primer proyecto individual de Federico acedo para el bootcamp "soy Henry" de la carrera data scientist.
+ En este repositorio podran encontrar el primer proyecto individual de Federico acedo para el bootcamp "soy Henry" de la carrera data scientist.
 
-el proyecto consta de dos etapas, una primera dónde tomamos el rol de data engineer. teniendo que realizar un sistema de consulta de las distintas plataformas de stream digitales ( Hulu,netflix,amazon y Disney ) para lograr este objetivo , recibimos distintas bases de datos en formato .csv para así con ellas realizar el proceso de ETL y luego subir una api con su sistema de consulta adecuado.
+El proyecto consta de dos etapas, una primera dónde tomamos el rol de data engineer. teniendo que realizar un sistema de consulta de las distintas plataformas de stream digitales ( Hulu,netflix,amazon y Disney ) para lograr este objetivo , recibimos distintas bases de datos en formato .csv para así con ellas realizar el proceso de ETL y luego subir una api con su sistema de consulta adecuado.
 y una segunda etapa donde nuestro rol es ahora el de un data scientist, aplicando un sistema de recomendación de películas , según el interés de un nuevo consumidor.
 
 proceso de ETL.
