@@ -45,4 +45,4 @@ para esto primero se realiza un EDA (exploratory datos analysis) esto nos guiara
 
 
 *** MODELO DE RECOMEDACION***
-Este modelo busca aprobar o desaprobar la recomendacion de una pelicula a un usuario , en funcion de la valoracion (puntuacion) del mismo hacia otras peliculas. en el video acontinuacion busco desplayar mas esta idea y muestro como funciona el modelo . [link video] (https://drive.google.com/file/d/1ffjxeAcBWD9bbA4XnaxdMsEYWAw_C3RV/view?usp=share_link)
+Este modelo busca aprobar o desaprobar la recomendacion de una pelicula a un usuario , en funcion de la valoracion (puntuacion) del mismo hacia otras peliculas. en el video acontinuacion busco desplayar mas esta idea y muestro como funciona el modelo . [link video](https://drive.google.com/file/d/1ffjxeAcBWD9bbA4XnaxdMsEYWAw_C3RV/view?usp=share_link)
