@@ -23,10 +23,10 @@ ahora sí con el data sets ya listos procedemos a levantar la api para hacer el 
 este sistema de consultas lo van a poder realizar desde este link que les comparto aquí: 
 el mismo contá de 4 consultas diferentes.
 
-+ Película con mayor duración con filtros opcionales de AÑO, PLATAFORMA Y TIPO DE DURACIÓN. (la función debe llamarse get_max_duration(year, platform, duration_type))
-+ Cantidad de películas por plataforma con un puntaje mayor a XX en determinado año (la función debe llamarse get_score_count(platform, scored, year))
-+ Cantidad de películas por plataforma con filtro de PLATAFORMA. (La función debe llamarse get_count_platform(platform))
-+ Actor que más se repite según plataforma y año. (La función debe llamarse get_actor(platform, year))
+**Película con mayor duración con filtros opcionales de AÑO, PLATAFORMA Y TIPO DE DURACIÓN. (la función debe llamarse get_max_duration(year, platform, duration_type))
+**Cantidad de películas por plataforma con un puntaje mayor a XX en determinado año (la función debe llamarse get_score_count(platform, scored, year))
+**Cantidad de películas por plataforma con filtro de PLATAFORMA. (La función debe llamarse get_count_platform(platform))
+**Actor que más se repite según plataforma y año. (La función debe llamarse get_actor(platform, year))
 
 
 https://pi1fa.onrender.com
