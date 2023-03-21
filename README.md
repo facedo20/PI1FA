@@ -42,5 +42,7 @@ Una vez realizado en codigo las 4 consultas procedemos a levantar la API (Applic
 Con la api funcionando estamos listos para consumirla y asi pasar al segundo punto del este proyecto.
 ahora tomamos el rol de un data science, y desarrollamos un sistema de recomendacion de peliculas.
 para esto primero se realiza un EDA (exploratory datos analysis) esto nos guiara hacia el modelo que buscamos entrenar y luego aplicar .
+
+
 *** MODELO DE RECOMEDACION***
 Este modelo busca aprobar o desaprobar la recomendacion de una pelicula a un usuario , en funcion de la valoracion (puntuacion) del mismo hacia otras peliculas. en el video acontinuacion busco desplayar mas esta idea y muestro como funciona el modelo .
