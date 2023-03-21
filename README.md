@@ -36,5 +36,5 @@ el mismo contá de 4 consultas diferentes.
 
 **'Actor que más se repite según plataforma y año. (La función debe llamarse get_actor(platform, year))'**
 
+una vez realizado en codigo las 4 consultas procedemos a levantar la API (Application Programming Interface) que nos permiten mover y brindar acceso simple a los datos que se quieran disponibilizar a través de los diferentes endpoints(consultas), o puntos de salida de la API. para esto se utilizo FASTAPI ,un web framework moderno y de alto rendimiento para construir APIs con Python. a continuacion les dejo un link de render, una plataforma que nos permite ralizar un deployment y asi hacer publica nuestro sistema. [link](https://pi1fa.onrender.com)
 
-https://pi1fa.onrender.com
