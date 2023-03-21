@@ -2,17 +2,18 @@
 
  En este repositorio podran encontrar el primer proyecto individual de Federico acedo para el bootcamp "soy Henry" de la carrera data scientist.
 
-El proyecto consta de dos etapas, una primera dónde tomamos el rol de data engineer. teniendo que realizar un sistema de consulta de las distintas plataformas de stream digitales ( Hulu,netflix,amazon y Disney ) para lograr este objetivo , recibimos distintas bases de datos en formato .csv para así con ellas realizar el proceso de ETL y luego subir una api con su sistema de consulta adecuado.
-y una segunda etapa donde nuestro rol es ahora el de un data scientist, aplicando un sistema de recomendación de películas , según el interés de un nuevo consumidor.
+El proyecto consta de dos etapas, una primera dónde tomamos el rol de data engineer. teniendo que realizar un sistema de consulta de las distintas plataformas de stream digitales ( Hulu,netflix,amazon y Disney ) para lograr este objetivo, recibimos distintas bases de datos en formato .csv para realizar el proceso de ETL.
+Y una segunda etapa donde nuestro rol es ahora el de un data scientist, aplicando un sistema de recomendación de películas para un cliente.
 
 ***proceso de ETL.***
-las siglas significa ( extraction,transformation anda loading) extracción , transforma y cargado.
-por lo que iniciamos cargado las bases de datos entregadas a nuestro editor de texto , en este caso visual studio code.
-una vez cargado concatenamos los diferentes datasets quedando así un solo datasets lo que nos permite trabajar de manera más ordenada y poder empezar  la transformación de ese bases de datos. 
-está parte del proceso la subdividió en varios pasos a seguís
-***1er:*** examinó el datasets para entender en profundidad como está integrado y detectar errores o elementos de poco interés.
+Las siglas significa ( extraction,transformation anda loading) extracción, transformacion y cargado.
+por lo que iniciamos ingestando los archivos .csv  a nuestro editor de texto , en este caso visual studio code.
+una vez cargado concatenamos los diferentes archivos quedando así un solo dataFrame lo que nos permite trabajar de manera más ordenada y poder empezar  la transformación de ese bases de datos. 
+PASOS QUE SE SIGUIERON PARA REALIZAR UN BUEN PROCESO DE TRANSFORMACION:
+***1er:***  Se examina el DataFrame para entender en profundidad como está integrado y detectar outliers o elementos de poco interés.
 ***2da:*** una vez examinado el datasets, nos centramos en aplicar las modificiones necesarias y pedidas para la aprobación del proyecto.
 ellas son: 
+
 **'1.Generar campo id: Cada id se compondrá de la primera letra del nombre de la plataforma, seguido del show_id ya presente en los datasets (ejemplo para títulos de Amazon = as123)'**
 
 **'2.Los valores nulos del campo rating deberán reemplazarse por el string “G” (corresponde al maturity rating: “general for all audiences”'**
@@ -24,9 +25,9 @@ ellas son:
 **'5.El campo duration debe convertirse en dos campos: duration_int y duration_type. El primero será un integer y el segundo un string indicando la unidad de medición de duración: min (minutos) o season (temporadas)'**
 
 ***3ero:*** una vez realizada las modificaciones pedidas y necesarias, se procede con la limpieza de datos nulos en caso de ser necesario y reemplazo de valores faltantes.
-ahora sí con el data sets ya listos procedemos a levantar la api para hacer el sistema de consulta.
-este sistema de consultas lo van a poder realizar desde este link que les comparto aquí: 
-el mismo contá de 4 consultas diferentes.
+
+ahora sí con el dataFrame ya listos procedemos generar los codigos necesarios y levantar la api para hacer el sistema de consulta.
+el mismo contá de 4 puntos diferentes.
 
 **'Película con mayor duración con filtros opcionales de AÑO, PLATAFORMA Y TIPO DE DURACIÓN. (la función debe llamarse get_max_duration(year, platform, duration_type))'**
 
@@ -36,5 +37,10 @@ el mismo contá de 4 consultas diferentes.
 
 **'Actor que más se repite según plataforma y año. (La función debe llamarse get_actor(platform, year))'**
 
-una vez realizado en codigo las 4 consultas procedemos a levantar la API (Application Programming Interface) que nos permiten mover y brindar acceso simple a los datos que se quieran disponibilizar a través de los diferentes endpoints(consultas), o puntos de salida de la API. para esto se utilizo FASTAPI ,un web framework moderno y de alto rendimiento para construir APIs con Python. a continuacion les dejo un link de render, una plataforma que nos permite ralizar un deployment y asi hacer publica nuestro sistema. [link](https://pi1fa.onrender.com)
+Una vez realizado en codigo las 4 consultas procedemos a levantar la API (Application Programming Interface) que nos permiten mover y brindar acceso simple a los datos que se quieran disponibilizar a través de los diferentes endpoints(consultas), o puntos de salida de la API. para esto se utilizo FASTAPI ,un web framework moderno y de alto rendimiento para construir APIs con Python. a continuacion les dejo un link de render, una plataforma que nos permite ralizar un deployment y asi hacer publica nuestro sistema. [link](https://pi1fa.onrender.com)
 
+Con la api funcionando estamos listos para consumirla y asi pasar al segundo punto del este proyecto.
+ahora tomamos el rol de un data science, y desarrollamos un sistema de recomendacion de peliculas.
+para esto primero se realiza un EDA (exploratory datos analysis) esto nos guiara hacia el modelo que buscamos entrenar y luego aplicar .
+*** MODELO DE RECOMEDACION***
+Este modelo busca aprobar o desaprobar la recomendacion de una pelicula a un usuario , en funcion de la valoracion (puntuacion) del mismo hacia otras peliculas. en el video acontinuacion busco desplayar mas esta idea y muestro como funciona el modelo .
