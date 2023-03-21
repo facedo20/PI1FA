@@ -22,10 +22,10 @@ ellas son:
 ahora sí con el data sets ya listos procedemos a levantar la api para hacer el sistema de consulta.
 este sistema de consultas lo van a poder realizar desde este link que les comparto aquí: 
 el mismo contá de 4 consultas diferentes.
-1° consulta: devuelve la película de mayor duración de una plataforma seleccionada y de un año específico. ejemplo : 'la película más larga de netflix en el 2019'. 
-con solo escribir plataforma = Netflix tipo= pilicula (min ) o serie ( season) y año : 2019 , te va a responder :
++Película con mayor duración con filtros opcionales de AÑO, PLATAFORMA Y TIPO DE DURACIÓN. (la función debe llamarse get_max_duration(year, platform, duration_type))
++Cantidad de películas por plataforma con un puntaje mayor a XX en determinado año (la función debe llamarse get_score_count(platform, scored, year))
++Cantidad de películas por plataforma con filtro de PLATAFORMA. (La función debe llamarse get_count_platform(platform))
++Actor que más se repite según plataforma y año. (La función debe llamarse get_actor(platform, year))
 
-2° consulta: devuelve la valoración promedio de una película en tal año.
-3er consulta: devuelve la cantidad de películas por año en cada plataforma
-4° consulta: 
+
 https://pi1fa.onrender.com
