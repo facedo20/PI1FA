@@ -1,4 +1,4 @@
-# PI1FA
+[HenryLogo](https://d31uz8lwfmyn8g.cloudfront.net/Assets/logo-henry-white-lg.png)
 
  En este repositorio podran encontrar el primer proyecto individual de Federico acedo para el bootcamp "soy Henry" de la carrera data scientist.
 
@@ -12,17 +12,15 @@ una vez cargado concatenamos los diferentes datasets quedando así un solo datas
 está parte del proceso la subdividió en varios pasos a seguís
 1er: examinó el datasets para entender en profundidad como está integrado y detectar errores o elementos de poco interés.
 2da: una vez examinado el datasets, nos centramos en aplicar las modificiones necesarias y pedidas para la aprobación del proyecto.
-ellas son:
-
-
-
-
-
+ellas son: 
+1.Generar campo id: Cada id se compondrá de la primera letra del nombre de la plataforma, seguido del show_id ya presente en los datasets (ejemplo para títulos de Amazon = as123)
+2.Los valores nulos del campo rating deberán reemplazarse por el string “G” (corresponde al maturity rating: “general for all audiences”
+3.De haber fechas, deberán tener el formato AAAA-mm-dd
+4.Los campos de texto deberán estar en minúsculas, sin excepciones
+5.El campo duration debe convertirse en dos campos: duration_int y duration_type. El primero será un integer y el segundo un string indicando la unidad de medición de duración: min (minutos) o season (temporadas)
 3ero: una vez realizada las modificaciones pedidas y necesarias, se procede con la limpieza de datos nulos en caso de ser necesario y reemplazo de valores faltantes.
-
 ahora sí con el data sets ya listos procedemos a levantar la api para hacer el sistema de consulta.
-
-este sistema de consultas lo van a poder realizar desde este link que les comparto aquí: LINK
+este sistema de consultas lo van a poder realizar desde este link que les comparto aquí: 
 el mismo contá de 4 consultas diferentes.
 1° consulta: devuelve la película de mayor duración de una plataforma seleccionada y de un año específico. ejemplo : 'la película más larga de netflix en el 2019'. 
 con solo escribir plataforma = Netflix tipo= pilicula (min ) o serie ( season) y año : 2019 , te va a responder :
